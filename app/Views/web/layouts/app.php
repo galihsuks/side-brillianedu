@@ -123,11 +123,11 @@
     </style>
 </head>
 <body class="text-dark-900">
-    <div class="min-h-screen pb-24 md:pb-0">
+    <div class="min-h-screen">
         <header class="sticky top-0 z-30 border-b border-primary-200/70 bg-white/85 backdrop-blur-xl">
             <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
                 <a href="<?= base_url('/') ?>" class="flex items-center gap-3">
-                    <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-glow">
+                    <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl">
                         <img src="/assets/logo/no-bg.PNG" class="h-full w-full object-cover" alt="<?= esc($appName) ?>">
                     </div>
                     <div>
@@ -237,6 +237,58 @@
         <main>
             <?= $this->renderSection('content') ?>
         </main>
+
+        <footer class="border-t border-primary-100 bg-white/90">
+            <div class="mx-auto grid max-w-7xl gap-8 px-5 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+                <div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                        <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
+                            <img src="/assets/logo/no-bg.PNG" class="h-full w-full object-cover" alt="<?= esc($appName) ?>">
+                        </div>
+                        <div>
+                            <p class="text-lg font-bold text-dark-900"><?= esc($appName) ?></p>
+                            <p class="text-xs md:text-sm text-dark-500">Bimbingan private dengan pendekatan personal untuk siswa di Klaten dan sekitarnya.</p>
+                        </div>
+                    </div>
+                    <p class="hidden md:block mt-5 max-w-2xl leading-1 md:leading-7 text-xs md:text-sm text-dark-600">
+                        Brillian Edu hadir untuk membantu siswa belajar dengan lebih nyaman, terarah, dan fleksibel melalui layanan tutor datang ke rumah.
+                    </p>
+                </div>
+
+                <div class="grid gap-6 sm:grid-cols-2">
+                    <div>
+                        <p class="text-xs md:text-sm font-semibold uppercase tracking-[0.24em] text-primary-700">Navigasi</p>
+                        <div class="mt-4 space-y-2 md:space-y-3 text-xs md:text-sm text-dark-600">
+                            <a href="<?= base_url('/') ?>" class="block transition hover:text-primary-700">Beranda</a>
+                            <a href="<?= base_url('/about') ?>" class="block transition hover:text-primary-700">Tentang Kami</a>
+                            <a href="<?= base_url('/service') ?>" class="block transition hover:text-primary-700">Layanan</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-xs md:text-sm font-semibold uppercase tracking-[0.24em] text-primary-700">Hubungi Kami</p>
+                        <div class="mt-4 space-y-2 md:space-y-3 text-dark-600 text-xs md:text-sm">
+                            <a href="https://wa.me/6282323606540" target="_blank" rel="noreferrer" class="flex items-center gap-2 transition hover:text-primary-700">
+                                <i class="bi bi-whatsapp"></i>
+                                0823-2360-6540
+                            </a>
+                            <a href="https://www.instagram.com/brillianedu.bimbel/" target="_blank" rel="noreferrer" class="flex items-center gap-2 transition hover:text-primary-700">
+                                <i class="bi bi-instagram"></i>
+                                @brillianedu.bimbel
+                            </a>
+                            <p class="flex items-center gap-2">
+                                <i class="bi bi-geo-alt"></i>
+                                Karanganom, Klaten
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-primary-100 bg-primary-50/60">
+                <div class="mx-auto flex max-w-7xl justify-center gap-2 px-5 py-4 text-sm text-dark-500 lg:px-8">
+                    <p class="text-center text-xs md:text-sm">&copy; <?= date('Y') ?> <?= esc($appName) ?>. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
     </div>
     <script>
         (() => {
