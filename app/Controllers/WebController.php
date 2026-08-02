@@ -9,6 +9,7 @@ class WebController extends BaseController
         return view('web/home', $this->buildPageData([
             'activeNav' => 'home',
             'description' => 'Bimbel private di Klaten dengan tutor datang ke rumah, jadwal fleksibel, dan pembelajaran personal untuk TK, SD, SMP, SMA, hingga umum.',
+            'keywords' => 'bimbel klaten, les private klaten, tutor datang ke rumah, bimbel tk sd smp sma, brillian edu',
             'pageTitle' => 'Bimbel private yang datang ke rumah dan fokus pada perkembangan anak.',
             'pageSubtitle' => 'Brillian Edu membantu siswa belajar lebih nyaman, lebih terarah, dan lebih percaya diri bersama tutor yang menyesuaikan kebutuhan tiap anak.',
             'seoTitle' => 'Brillian Edu | Bimbel & Les Private Klaten',
@@ -31,6 +32,7 @@ class WebController extends BaseController
         return view('web/about', $this->buildPageData([
             'activeNav' => 'about',
             'description' => 'Mengenal Brillian Edu, bimbingan private di Klaten yang mengutamakan pendekatan personal, tutor datang ke rumah, dan pembelajaran fleksibel.',
+            'keywords' => 'tentang brillian edu, profil bimbel klaten, les private karanganom, tutor private klaten',
             'seoTitle' => 'Tentang Brillian Edu | Bimbel Private Klaten',
             'ctaWhatsapp' => $this->whatsappUrl(),
             'contactDisplay' => '0823-2360-6540',
@@ -60,6 +62,7 @@ class WebController extends BaseController
         return view('web/service', $this->buildPageData([
             'activeNav' => 'service',
             'description' => 'Layanan Brillian Edu meliputi calistung, les private TK sampai SMA, persiapan TOEFL dasar, mengaji, dan pendampingan belajar fleksibel di Klaten.',
+            'keywords' => 'layanan bimbel klaten, les calistung klaten, les mengaji klaten, toefl dasar klaten, les private sma klaten',
             'seoTitle' => 'Layanan Brillian Edu | Les Private Klaten',
             'ctaWhatsapp' => $this->whatsappUrl(),
             'contactDisplay' => '0823-2360-6540',
@@ -90,6 +93,7 @@ class WebController extends BaseController
             'canonicalUrl' => $canonicalUrl,
             'currentPath' => $currentPath,
             'description' => $appName,
+            'keywords' => strtolower($appName),
             'metaImage' => $baseUrl . '/assets/logo/bgwhite.png',
             'metaType' => 'website',
             'seoTitle' => $appName,
