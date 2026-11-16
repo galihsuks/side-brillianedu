@@ -10,7 +10,7 @@ class WebController extends BaseController
             'activeNav' => 'home',
             'description' => 'Bimbel private di Klaten dengan tutor datang ke rumah, jadwal fleksibel, dan pembelajaran personal untuk TK, SD, SMP, SMA, hingga umum.',
             'keywords' => 'bimbel klaten, les private klaten, tutor datang ke rumah, bimbel tk sd smp sma, brillian edu',
-            'pageTitle' => 'Bimbel private yang datang ke rumah dan fokus pada perkembangan anak.',
+            'pageTitle' => 'Belajar Privat, Berkembang Optimal',
             'pageSubtitle' => 'Brillian Edu membantu siswa belajar lebih nyaman, lebih terarah, dan lebih percaya diri bersama tutor yang menyesuaikan kebutuhan tiap anak.',
             'seoTitle' => 'Brillian Edu | Bimbel & Les Private Klaten',
             'ctaWhatsapp' => $this->whatsappUrl(),
